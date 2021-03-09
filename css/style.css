@@ -583,6 +583,7 @@ img {
 
 .container-position {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -679,6 +680,70 @@ img {
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+
+/* FOOTER FORM */
+
+.footer-form {
+  margin-left: 93px;
+}
+
+.form-position {
+  display: flex;
+}
+
+.form-title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: var(--bg-color-white);
+}
+
+.footer-form input[type="email"] {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  background-color: var(--bg-color-grey);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer-form input[type="email"]::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form-btn {
+  width: 200px;
+  height: 50px;
+  padding: 0px;
+  margin-left: 12px;
+
+  background-color: var(--accent-color-blue);
+  color: var(--bg-color-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-width: 0px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.footer-form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-form-btn svg {
+  margin-left: 10px;
 }
 
 /*--------- PORTFOLIO ---------- */
@@ -779,6 +844,99 @@ img {
 
 /* BACKDROP */
 /* MODAL */
+
+.modal-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  position: relative;
+  margin-top: 10px;
+}
+
+.form-field svg {
+  position: absolute;
+  top: 65%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+.form-field input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-comment-text {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+}
+
+.input-lable {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  color: var(--text-color-grey);
+}
+
+.form-agree-container {
+  margin-top: 20px;
+}
+
+.checkbox-agree:checked + .checkbox-agree-icon{
+  border: 2px solid red;
+}
+
+.form-agree-container svg{
+
+}
+
+.form-comment-text::placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-link {
+  color: var(--accent-color-blue);
+}
+
+.modal-form-btn {
+  width: 200px;
+  height: 50px;
+  padding: 0px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: var(--accent-color-blue);
+  color: var(--bg-color-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-width: 0px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+}
 
 .backdrop {
   position: fixed;
